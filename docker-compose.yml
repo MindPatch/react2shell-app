@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  vulnerable-app:
+    build: .
+    ports:
+      - "6060:6060"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
