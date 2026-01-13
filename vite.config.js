@@ -6,5 +6,13 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 7070,
+    strictPort: true,
+    hmr: {
+      clientPort: 7070,
+    },
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 7070,
   },
 });
